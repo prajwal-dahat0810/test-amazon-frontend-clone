@@ -38,19 +38,11 @@ const Sidebar: React.FC<SidebarProps> = ({
               href="#"
               className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
             >
-              <span className="flex-1 ms-3 whitespace-nowrap">Kanban</span>
+              <span className="flex-1 ms-3 whitespace-nowrap">Show</span>
             </a>
           </li>
           {/* Add additional items as needed */}
         </ul>
-        <div className="p-4 mt-6 rounded-lg bg-blue-50 dark:bg-blue-900">
-          <p className="text-sm text-blue-800 dark:text-blue-400">
-            Preview the new Flowbite dashboard navigation!
-          </p>
-          <a href="#" className="text-sm text-blue-800 underline font-medium">
-            Turn new navigation off
-          </a>
-        </div>
       </div>
     </aside>
   );
