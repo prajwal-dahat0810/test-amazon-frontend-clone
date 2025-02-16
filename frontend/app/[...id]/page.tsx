@@ -46,8 +46,8 @@ export default function Product() {
     <Suspense fallback={<Loading />}>
       <>
         <Navbar />
-        <div className="pt-10 px-4 grid grid-rows-2 border md:grid-col-2 md:grid-cols-10  gap-5">
-          <div className=" px-3 py-2 border  sm:col-start-1 sm:col-span-3 col-span-3   md:col-start-2 ">
+        <div className="pt-10 px-4 grid grid-rows-2  md:grid-col-2 md:grid-cols-10  gap-5">
+          <div className=" px-3 py-2   sm:col-start-1 sm:col-span-3 col-span-3   md:col-start-2 ">
             <img
               alt=""
               src={product.image}
@@ -81,7 +81,7 @@ export default function Product() {
               </li>
             </ul>
           </div>
-          <div className="border md:col-start-8 md:col-span-2 ">
+          <div className=" md:col-start-8 md:col-span-2 ">
             <div className="card p-5">
               <div className="pl-2 font-bold md:text-xl max-sm:text-base">
                 ${product.price}

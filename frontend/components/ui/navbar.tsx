@@ -9,13 +9,13 @@ export default function Navbar({ className }: { className?: string }) {
         className
       )}
     >
-      <div className="h-full not-sr-only sr-only max-md:not-sr-only hover:border cursor-pointer">
+      <div className="h-full not-sr-only sr-only max-md:not-sr-only  cursor-pointer">
         <svg
           height="50px"
           widths={"80px"}
           version="1.1"
           strokeWidth={14}
-          className="hover:border cursor-pointer"
+          className=" cursor-pointer"
           viewBox="10 0 512 512"
           xmlSpace="preserve"
           xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ export default function Navbar({ className }: { className?: string }) {
           Cart
         </button>
       </div>
-      <div className="text-white h-full flex hover:border cursor-pointer justify-center items-center sr-only  lg:not-sr-only">
+      <div className="text-white h-full flex  cursor-pointer justify-center items-center sr-only  lg:not-sr-only">
         Update Location
       </div>
       <div className=" max-w-full w-full ">
@@ -143,7 +143,7 @@ export default function Navbar({ className }: { className?: string }) {
           </div>
         </div>
       </div>
-      <div className="flex px-4 border justify-around text-lg font-serif font-earthlight text-[#324F77] gap-6 items-center max-xl:sr-only max-lg:sr-only max-md:sr-only max-sm:sr-only">
+      <div className="flex px-4  justify-around text-lg font-serif font-earthlight text-[#324F77] gap-6 items-center max-xl:sr-only max-lg:sr-only max-md:sr-only max-sm:sr-only">
         <div>
           <button
             id="dropdown-button"

@@ -63,7 +63,7 @@ const Checkout = () => {
                 id="address"
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
-                className="w-full px-3 py-2 border rounded-lg"
+                className="w-full px-3 py-2  rounded-lg"
                 required
               />
             </div>
