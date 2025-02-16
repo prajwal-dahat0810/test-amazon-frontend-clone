@@ -11,7 +11,6 @@ const XlListProducts = [
 ];
 
 import Sidebar from "@/components/nav/sidebar";
-import SidebarToggle from "@/components/nav/sidebar";
 import { useState } from "react";
 export const SubNav = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -44,8 +43,8 @@ export const SubNav = () => {
           />
         </svg>
         <div className="flex  items-center gap-5 text-white font-medium ">
-          {XlListProducts.map((product) => {
-            return <div>{product}</div>;
+          {XlListProducts.map((product, index) => {
+            return <div key={index}>{product}</div>;
           })}
         </div>
       </div>

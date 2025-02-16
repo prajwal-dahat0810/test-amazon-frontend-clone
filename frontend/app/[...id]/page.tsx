@@ -4,12 +4,10 @@ import { Loading } from "@/components/Loading";
 import Navbar from "@/components/ui/navbar";
 import { productItemInterface } from "@/components/ui/ProductItem";
 import axios from "axios";
-import { useRouter } from "next/navigation";
-// import Link from "next/link";
 
 import { useParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
-export default function product() {
+export default function Product() {
   const params = useParams<{ id: string }>();
   const [product, setProduct] = useState<productItemInterface>({
     id: "",

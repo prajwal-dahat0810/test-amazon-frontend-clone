@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 type SidebarProps = {
   isOpen: boolean;
@@ -10,7 +10,7 @@ export type SidebarToggleProps = {
 };
 const Sidebar: React.FC<SidebarProps> = ({
   isOpen,
-  toggleSidebar,
+
   setSidebarOpen,
 }) => {
   return (
@@ -26,7 +26,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           <li>
             <div
               className="ms-3 w-full cursor-pointer"
-              onClick={(e) => {
+              onClick={() => {
                 setSidebarOpen(false);
               }}
             >

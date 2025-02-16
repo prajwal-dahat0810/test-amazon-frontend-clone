@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const Checkout = () => {
   const [address, setAddress] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("creditCard");
-  const [cartItems, setCartItems] = useState([
+  const [cartItems] = useState([
     { id: 1, name: "Product 1", price: 29.99, quantity: 1 },
     { id: 2, name: "Product 2", price: 49.99, quantity: 1 },
   ]);
@@ -15,8 +15,7 @@ const Checkout = () => {
       .toFixed(2);
   };
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     alert("Order placed successfully!");
   };
 
